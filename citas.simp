@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="14.20" multi-file="no" uid="simpf83d29a9c2d6491ab3d5d1f539505272" creation-date="02/23/2024 08:28:04">
+  <meta>
+    <name>citas</name>
+    <authors> </authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>1</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="property" type="Property" />
+        <value>2</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>3</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-3083afd3ee0c4efb91c5642e3778ecd5" name="" task-id-sequence="0">
+    <working-schedule uid="ws-1dedf861ec4243dbbc1d6a1e7ccd3632" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+    <persons>
+      <person id="">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+        <working-schedule uid="ws-7f147c4e456e48c68a54ec55845630b8" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-e9469ff4d47449fbb216a96ae062c353" name="" order-index="-1" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types />
+    </custom-types>
+  </types>
+  <items />
+  <models>
+    <model id="p21c194dfe3a34ff293fee43f55adcd30_251299741" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>02/23/2024 08:28:06</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-class" id="p15e4bdeeb4424303ac8484eaeb704afb_231460438" name="ClassDiagram1" order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>02/23/2024 08:28:06</creation-date>
+          <change-date>02/23/2024 08:30:54</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="ece86896535e4233b0ad1e2996b0be1e" cid="C001" type="class" name="Medico" owner="5bd936195e0849208d266731360640f3" creator="" creation-date="02/23/2024 08:30:53" visibility="undefined">
+            <owned-items />
+            <attributes>
+              <attribute id="a1521a52d61614157872548bc54b794bc548" cid="PROP001" name="id" creation-date="02/23/2024 08:31:19" property-ref="1c458b0e23914b42b94e919a2e8c26e0" />
+            </attributes>
+            <operations>
+              <operation id="o6b867e82f8b64f8eaa677e73bc104ee6374" cid="OP001" name="GetId" creation-date="02/23/2024 08:33:50" type="" type-id="" visibility="public">
+                <stereotypes>
+                  <stereotype>getter</stereotype>
+                </stereotypes>
+              </operation>
+              <operation id="o7cbc94ebeafe41b585376d5a65d2bbab376" cid="OP002" name="SetId" creation-date="02/23/2024 08:33:50" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="pcdf61386caf244c8882cccf1cc61f9cf" name="id" type="" type-id="" creation-date="02/23/2024 08:33:50" />
+                </parameters>
+                <stereotypes>
+                  <stereotype>setter</stereotype>
+                </stereotypes>
+              </operation>
+            </operations>
+          </item>
+          <item id="1c458b0e23914b42b94e919a2e8c26e0" cid="PROP001" type="property" name="id" owner="ece86896535e4233b0ad1e2996b0be1e" creator="" creation-date="02/23/2024 08:31:19" visibility="public" />
+          <item id="5bd936195e0849208d266731360640f3" cid="PKG001" type="package" name="entities" creator="" creation-date="02/23/2024 08:30:22" visibility="undefined">
+            <owned-items />
+          </item>
+        </abstract-items>
+        <layer id="1722b236670a476b8e9d4fd0f32e9047" name="Default" visible="true" enabled="true" locked="false">
+          <item id="5bd936195e0849208d266731360640f3" iid="58404786ce56472eb06e867f7da7c82f" creation-date="02/23/2024 08:30:22" order-index="0" type="entity">
+            <layout ax="86" ay="128" awidth="392" aheight="273" x="86" y="128" width="392" height="273" expanded="86,128,392,273" collapsed="0,0,0,0" />
+            <package name-in-body="false" />
+          </item>
+          <item id="ece86896535e4233b0ad1e2996b0be1e" iid="49b8e4b2d5d14b9faf8fa91d02c0973a" container="5bd936195e0849208d266731360640f3" container-iid="58404786ce56472eb06e867f7da7c82f" show-fields="true" creation-date="02/23/2024 08:30:53" order-index="1" type="entity">
+            <layout ax="155" ay="200" awidth="140" aheight="160" x="155" y="200" width="140" height="160" />
+            <classifier />
+            <class />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
