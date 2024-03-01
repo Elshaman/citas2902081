@@ -1,34 +1,42 @@
 package org.ptech.java.citas;
 
-import org.ptech.java.citas.entities.Especialidad;
+import org.ptech.java.citas.entities.Enfermero;
 import org.ptech.java.citas.entities.Medico;
-import org.ptech.java.citas.entities.TipoDocumento;
+import org.ptech.java.citas.entities.Usuario;
+import org.ptech.java.citas.entities.enums.Especialidad;
+import org.ptech.java.citas.entities.enums.TipoDocumento;
 
 public class Main {
     public static void main(String[] args) {
        
-        //Crear un objeto medico
-        //Instanciar un medico
-        //Una manera de dar valor
-        //a atributos privados en una clase
-        //es a traves de el constructor
-        //parametrizado
-        Medico m = new Medico(1, 
-                             "Cristian" ,
-                             "Buitrago" ,
-                              TipoDocumento.PPT,
-                              1203230123412L, 
-                              345345345L , 
-                              Especialidad.MEDICINA_GENERAL );
+        //Crear un medico
+        Medico m1 = new Medico(1, 
+                       "Cristian", 
+                       "Buitrago",
+                       TipoDocumento.CC , 
+                       23124141224L,
+                       3344554L , 
+                       Especialidad.CARDIOLOGIA);
+        System.out.println("id del medico:" + m1.getId());  
 
-        //instanciar otro medico
-        Medico m2 = new Medico();
-        //Se debe utilizar primero el setter
-        //del atributo a asignar
-        m2.setNombres("Carla");
-        m2.setApellidos("Giraldo");
-        m2.setNumeroDocumento(12332131L);
-        System.out.println(m2.getNombres());
+        //Crear un enfermero : 
+        Enfermero e1 = new Enfermero(1,
+                                "Alejandra",
+                                 "Lopez", 
+                                 TipoDocumento.PPT, 
+                                 2342342L);
+        
+        //añadir 2 procedimientos al enfermero
+        e1.addProcedure("Aplicar Inyecciones");
+        e1.addProcedure("Lavado de oidos");
+
+        //recorrer los procedimientos de e1
+        for( String p : e1.getProcedimientos()){
+                System.out.println("Procedimiento:" + p);
+        }
+        
+        
+
         
 
     }
